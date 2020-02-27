@@ -1,6 +1,8 @@
 package com.chy4;
 
 
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -9,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @Description:
  */
 
+//@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.DEFAULT,readOnly = true,noRollbackFor = , rollbackFor = )
 @Transactional
 public class AccountServiceImpl implements AccountService {
 
